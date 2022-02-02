@@ -1,0 +1,78 @@
+:root { 
+    --grid-columns: 1;
+    --grid-rows: 1;
+    --pixel-width: 10px;
+    --pixel-height: 10px;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controlls { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.flex-column { 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.gameControlls { 
+    grid-column: 1 / -1;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.center { 
+    justify-content: start;
+    align-items: center;
+}
+
+.btn { 
+    height: 25px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: slategray;
+    margin: 1px;
+}
+
+.btnControlls { 
+    width: 100px;
+}
+
+.btn:hover { 
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+
+#container { 
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    background-color: black;
+    border: black solid 1px;
+    margin-bottom: 20px;
+}
+
+.grid-item { 
+    background: white;
+    height: var(--pixel-width);
+    width: var(--pixel-height);
+    /* font-size: 10px; */
+}
+
+.grid-item:hover { 
+    cursor: pointer;
+}
+
+.alive {
+    background-color: black;
+}

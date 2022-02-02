@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css" media="screen">
+    <script type="module" src="./scripts/index.mjs"></script>
+    <title>Game of Life</title>
+</head>
+<body>
+    <h1>Conway's Game of Life</h1>
+        <div class="controlls">
+            <div class="flex-column center">
+                <h2>Still lifes</h2>
+                <button class="btn" id="block">Block</button>
+                <button class="btn" id="beehive">Beehive</button>
+                <button class="btn" id="loaf">Loaf</button>
+                <button class="btn" id="boat">Boat</button>
+                <button class="btn" id="tub">Tub</button>
+            </div>
+            <div class="flex-column center">
+                <h2>Oscillators</h2>
+                <button class="btn" id="blinker">Blinker</button>
+                <button class="btn" id="toad">Toad</button>
+                <button class="btn" id="beacon">Beacon</button>
+                <button class="btn" id="pulsar">Pulsar</button>
+                <button class="btn" id="pentadecathlon">Pentadecathlon</button>
+            </div>
+            <div class="flex-column center">
+                <h2>Spaceships</h2>
+                <button class="btn" id="glider">Glider</button>
+                <button class="btn" id="lightweightspaceship">Lightweightspaceship</button>
+                <button class="btn" id="middleweightspaceships">Middleweightspaceships</button>
+                <button class="btn" id="heavyweigthspaceship">Heavyweigthspaceship</button>
+            </div>
+            <div class="flex-column center">
+                <h2>Guns & Breeders</h2>
+                <button class="btn" id="gliderGun">Gosip glider gun</button>
+                <button class="btn" id="simkinGliderGun">Simkin glider gun</button>
+                <button class="btn" id="BlockLayingEngine1">Block-laying engine1</button>
+                <button class="btn" id="BlockLayingEngine2">Block-laying engine2</button>
+            </div>
+        </div>
+
+        <div id="container"></div>
+        <div class="gameControlls">
+            <button class="btn btnControlls" id="randomGrid">Random Grid</button>
+            <button class="btn btnControlls" id="run">Run</button>
+            <button class="btn btnControlls" id="stop">Stop</button>
+            <button class="btn btnControlls" id="reset">Reset</button>
+        </div>
+</body>
+</html>
